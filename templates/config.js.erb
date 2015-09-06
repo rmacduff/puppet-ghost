@@ -13,8 +13,8 @@ config = {
         url: '<%= @url %>',
 
         mail: {
-            <% if defined? @transport -%>
-            transport: '<%= @transport %>',
+            <% if defined? @mail_transport -%>
+            transport: '<%= @mail_transport %>',
             <% end -%>
             <% if defined? @mail_from -%>
             from: '<%= @mail_from %>',

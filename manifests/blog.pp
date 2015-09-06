@@ -45,9 +45,9 @@ define ghost::blog(
   $socket = false,                       # True will use a socket instead
 
   # Mail settings (see http://docs.ghost.org/mail/)
-  $transport    = '', # Mail transport
-  $mail_from    = '', # Mail from address
-  $mail_options = {}, # Hash for mail options
+  $mail_transport = '', # Mail transport
+  $mail_from      = '', # Mail from address
+  $mail_options   = {}, # Hash for mail options
   ) {
 
   validate_string($blog)
@@ -73,7 +73,7 @@ define ghost::blog(
   }
   validate_string($host)
   validate_re($port, '\d+')
-  validate_string($transport)
+  validate_string($mail_transport)
   validate_string($mail_from)
   validate_hash($mail_options)
 

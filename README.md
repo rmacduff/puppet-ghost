@@ -119,9 +119,9 @@ $url    = 'https://my-ghost-blog.com', # Required URL of blog
 $socket = true,                        # Set to false to use host and port
 $host   = '127.0.0.1',                 # Host to listen on if not using socket
 $port   = '2368',                      # Port of host to listen on
-$transport    = '', # Mail transport
-$mail_from    = '', # Mail from address
-$mail_options = {}, # Hash for mail options
+$mail_transport = '', # Mail transport
+$mail_from      = '', # Mail from address
+$mail_options   = {}, # Hash for mail options
 ```
 
 Note that at least on my Ubuntu test systems, the `supervisor`
