@@ -46,7 +46,7 @@ define ghost::blog(
 
   # Mail settings (see http://docs.ghost.org/mail/)
   $transport    = '', # Mail transport
-  $fromaddress  = '', # Mail from address
+  $mail_from    = '', # Mail from address
   $mail_options = {}, # Hash for mail options
   ) {
 
@@ -74,7 +74,7 @@ define ghost::blog(
   validate_string($host)
   validate_re($port, '\d+')
   validate_string($transport)
-  validate_string($fromaddress)
+  validate_string($mail_from)
   validate_hash($mail_options)
 
   Exec {

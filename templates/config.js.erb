@@ -16,8 +16,8 @@ config = {
             <% if defined? @transport -%>
             transport: '<%= @transport %>',
             <% end -%>
-            <% if defined? @fromaddress -%>
-            fromaddress: '<%= @fromaddress %>',
+            <% if defined? @mail_from -%>
+            from: '<%= @mail_from %>',
             <% end -%>
             options: {
             <% @mail_options.each do |key, value| -%>
